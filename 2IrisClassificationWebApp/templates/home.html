@@ -2,13 +2,13 @@
 <html>
 <head>
 <title>My Flask Web App</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home1.css') }}">
 </head>
 <body>
 
 <h1>Iris Classification</h1>
 <p> Please fill in the values below to classify your iris flower</p>
-
+<div>
 <form action="/result" method="POST">
 
     <label>Sepal Length</label>
@@ -27,6 +27,7 @@
 
 
 </form>
+</div>
 
 </body>
 </html>
